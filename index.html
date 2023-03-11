@@ -23,7 +23,7 @@
 
     <body>
         
-        <main class ="w-90 mx-auto mt-4 flex items-center flex-col text-center">
+        <main class ="w-90 max-w-[120rem] mx-auto mt-4 flex items-center flex-col text-center">
             <section>
                 <h1 class ="text-gray-300 text-base">Our Pricing</h1>
                 <div class ="mt-2 flex items-center justify-center gap-x-2 text-gray-100 text-sm">
@@ -34,9 +34,9 @@
                     <p>Monthly</p>
                 </div>
             </section>
-            <section class ="w-90 mx-auto my-8 flex items-center flex-col gap-y-4" id ="sectionPlanTemplate">
+            <section class ="w-90 mx-auto my-8 grid place-items-center md:mt-6 md:grid-cols-2 md:gap-2 lg:mt-5 lg:grid-cols-3" id ="sectionPlanTemplate">
                 <template id ="planTemplate">
-                    <article class ="w-full p-2 text-gray-200 rounded-md group odd:text-white odd:bg-gradient-to-r odd:from-grdnt-100 odd:to-grdnt-200">
+                    <article class ="w-full max-w-3xl p-2 text-gray-200 rounded-md group odd:text-white odd:bg-gradient-to-r odd:from-grdnt-100 odd:to-grdnt-200 md:p-3 md:last-of-type:col-span-2 lg:py-6 lg:last-of-type:col-span-1">
                         <h2 class ="text-sm font-bold"></h2>
                         <p class ="mt-2 text-gray-300 text-xl group-odd:text-white"></p>
                         <section class ="w-full mx-auto my-3 flex items-center flex-col text-xs" id ="planDetails">
@@ -44,7 +44,7 @@
                                 <span class ="w-full py-1.5 group-odd:border-t group-odd:last-of-type:border-b group-odd:border-gray"></span>
                             </template>
                         </section>
-                        <button class ="w-full h-4 max-w-3xl mx-auto text-white text-xs tracking-[0.3rem] uppercase rounded-sm bg-gradient-to-r from-grdnt-100 to-grdnt-200 group-odd:text-grdnt-200 group-odd:bg-none group-odd:bg-white">Learn more</button>
+                        <button class ="w-full h-4 max-w-2xl mx-auto text-white text-xs tracking-[0.3rem] uppercase rounded-sm bg-gradient-to-r from-grdnt-100 to-grdnt-200 group-odd:text-grdnt-200 group-odd:bg-none group-odd:bg-white">Learn more</button>
                     </article>
                 </template>
             </section>
