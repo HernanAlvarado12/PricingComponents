@@ -1,0 +1,29 @@
+{
+  "name": "pricingcomponentstailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "model.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./css/mobile.css -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HernanAlvarado12/PricingComponents.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "tailwindcss",
+    "js",
+    "vanillajs"
+  ],
+  "author": "Hernan Alvarado <hernanvid123@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HernanAlvarado12/PricingComponents/issues"
+  },
+  "homepage": "https://github.com/HernanAlvarado12/PricingComponents#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
