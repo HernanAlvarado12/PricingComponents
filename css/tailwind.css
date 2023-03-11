@@ -611,6 +611,10 @@ html {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -761,6 +765,16 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .odd\:bg-gradient-to-r:nth-child(odd) {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -781,6 +795,10 @@ html {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .hover\:border:hover {
+    border-width: 1px;
+  }
+
   .hover\:border-grdnt-200:hover {
     --tw-border-opacity: 1;
     border-color: hsl(237 63% 64% / var(--tw-border-opacity));

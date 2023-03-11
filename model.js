@@ -1,3 +1,18 @@
+
+document.addEventListener('click', event => {
+    if(event.target.matches('#toggleButton')) {
+        event.target.classList.toggle('justify-end')
+        changePlan(event.target.classList.contains('justify-end'))
+    }else if(event.target.matches('#toggleButton > span')) {
+        event.target.parentElement.classList.toggle('justify-end')
+        changePlan(event.target.parentElement.classList.contains('justify-end'))
+    }
+})
+
+
+/**
+ * 
+ */
 const requestAPI = async () => {
     const planTemplate = document.getElementById('planTemplate').content
     const documentFragment = document.createDocumentFragment()
@@ -32,5 +47,19 @@ async function deepDetails(details, parentNode) {
     parentNode.getElementById('planDetails').append(documentFragment)
 }
 
-requestAPI()
 
+/**
+ * 
+ * @param {Boolean} state 
+ */
+function changePlan(state) {
+    const plans = document.querySelectorAll('#sectionPlanTemplate > article.max-w-3xl > h2 + p')
+    plans.forEach(price => {
+        const strs = price.textContent.split('.')
+        if(state) 
+            price.textContent = `${strs[0].slice(0, -1)}.${strs[1]}`
+        else 
+            price.textContent = `${strs[0]}9.${strs[1]}`
+    })
+}
+requestAPI()
