@@ -529,16 +529,12 @@ html {
   margin-right: auto;
 }
 
-.mt-3 {
-  margin-top: 3rem;
+.mt-2 {
+  margin-top: 2rem;
 }
 
 .mt-4 {
   margin-top: 4rem;
-}
-
-.mt-2 {
-  margin-top: 2rem;
 }
 
 .flex {
@@ -555,10 +551,6 @@ html {
 
 .h-70 {
   height: 70%;
-}
-
-.h-2 {
-  height: 2rem;
 }
 
 .w-5 {
@@ -659,9 +651,9 @@ html {
   text-transform: uppercase;
 }
 
-.text-gray-200 {
+.text-gray-100 {
   --tw-text-opacity: 1;
-  color: hsl(233 13% 49% / var(--tw-text-opacity));
+  color: hsl(234 14% 74% / var(--tw-text-opacity));
 }
 
 .text-gray-300 {
@@ -672,9 +664,4 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-100 {
-  --tw-text-opacity: 1;
-  color: hsl(234 14% 74% / var(--tw-text-opacity));
 }
