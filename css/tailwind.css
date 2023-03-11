@@ -583,20 +583,20 @@ html {
   width: 100%;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
 
-.max-w-xl {
-  max-width: 36rem;
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .max-w-\[120rem\] {
   max-width: 120rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
@@ -630,6 +630,40 @@ html {
 
 .rounded-sm {
   border-radius: 0.6rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-grdnt-200 {
+  --tw-border-opacity: 1;
+  border-color: hsl(237 63% 64% / var(--tw-border-opacity));
+}
+
+.border-grdnt-100 {
+  --tw-border-opacity: 1;
+  border-color: hsl(236 72% 79% / var(--tw-border-opacity));
+}
+
+.border-gray {
+  --tw-border-opacity: 1;
+  border-color: hsl(240 90% 100% / var(--tw-border-opacity));
+}
+
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: hsl(233 13% 49% / var(--tw-border-opacity));
+}
+
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: hsl(234 14% 74% / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -746,6 +780,31 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .hover\:border-grdnt-200:hover {
+    --tw-border-opacity: 1;
+    border-color: hsl(237 63% 64% / var(--tw-border-opacity));
+  }
+
+  .hover\:bg-white:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .hover\:bg-none:hover {
+    background-image: none;
+  }
+
+  .hover\:text-grdnt-200:hover {
+    --tw-text-opacity: 1;
+    color: hsl(237 63% 64% / var(--tw-text-opacity));
+  }
+
+  .hover\:opacity-60:hover {
+    opacity: 0.6;
+  }
+}
+
 .group:nth-child(odd) .group-odd\:border-t {
   border-top-width: 1px;
 }
@@ -778,6 +837,22 @@ html {
   border-bottom-width: 1px;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .group:nth-child(odd) .group-odd\:hover\:border-white:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+
+  .group:nth-child(odd) .group-odd\:hover\:bg-transparent:hover {
+    background-color: transparent;
+  }
+
+  .group:nth-child(odd) .group-odd\:hover\:text-white:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mt-6 {
     margin-top: 6rem;
@@ -801,10 +876,6 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mt-4 {
-    margin-top: 4rem;
-  }
-
   .lg\:mt-5 {
     margin-top: 5rem;
   }
