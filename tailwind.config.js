@@ -33,7 +33,7 @@ module.exports = {
         'md': '1.8rem',
         'base': '2.4rem',
         'lg': '3.2rem',
-        'xl': '4.2rem'
+        'xl': '5.4rem'
       },
       borderRadius: {
         'sm': '0.6rem',
@@ -44,7 +44,7 @@ module.exports = {
         'grdnt-100': 'hsl(236, 72%, 79%)',
         'grdnt-200': 'hsl(237, 63%, 64%)',
         gray: {
-          DEFAULT: 'hsl(240, 78%, 98%)',
+          DEFAULT: 'hsl(240, 90%, 100%)',
           100: 'hsl(234, 14%, 74%)',
           200: 'hsl(233, 13%, 49%)',
           300: 'hsl(232, 13%, 33%)'
